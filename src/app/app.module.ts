@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { APP_BASE_HREF } from '@angular/common';
+
 
 // COMPONENTES
 import { AppComponent } from './app.component';
@@ -34,7 +36,7 @@ import { CrearVehiculosComponent } from './components/crear-vehiculos/crear-vehi
     SharedModule,
     RouterModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
