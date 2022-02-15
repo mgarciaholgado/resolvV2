@@ -1,12 +1,12 @@
 {
-  "name": "proyecto-frontend",
+  "name": "proyecto-fronted",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "serve": "ng serve --o",
+    "serve": "ng serve",
     "ts":"tsc -w",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
